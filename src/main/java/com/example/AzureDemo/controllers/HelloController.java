@@ -15,6 +15,7 @@ public class HelloController {
     @GetMapping("/{id}")
     public Student hello(@PathVariable int id) {
         return repo.findById(id).orElse(null);
+
     }
 
     @PostMapping("/")
